@@ -3,58 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diamon M. Mala</title>
+    <title>My Digital Card</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f5f5f5;
-            padding: 30px;
+            background: linear-gradient(135deg, #222, #555);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
         .card {
-            max-width: 400px;
-            margin: auto;
+            width: 100%;
+            max-width: 390px;
             background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            border-radius: 25px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+        .profile {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #eeeeee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
         }
         h1 {
-            margin-bottom: 10px;
+            margin: 5px 0;
+            font-size: 27px;
         }
-        p {
-            color: #555;
+        .subtitle {
+            color: #777;
+            margin-bottom: 25px;
         }
-        a {
+        .button {
             display: block;
+            text-decoration: none;
             margin: 12px 0;
-            padding: 14px;
+            padding: 15px;
+            border-radius: 12px;
             background: #222;
             color: white;
-            text-decoration: none;
-            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
         }
-        a:hover {
+        .button:hover {
             opacity: 0.8;
+        }
+        .footer {
+            margin-top: 25px;
+            color: #999;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
     <div class="card">
+        <div class="profile">
+            👤
+        </div>
         <h1>Diamon M. Mala</h1>
-        <p>📱 09850702511</p>
-        <a href="tel:09850702511">
+        <div class="subtitle">
+            My Digital Card
+        </div>
+        <a class="button" href="tel:09850702511">
             📞 Call Me
         </a>
-        <a href="https://www.facebook.com/share/14q5q7DGCfZ/?mibextid=wwXIfr" target="_blank">
+        <a class="button"
+           href="https://www.facebook.com/share/14q5q7DGCfZ/?mibextid=wwXIfr"
+           target="_blank">
             📘 Facebook
         </a>
-        <a href="https://www.tiktok.com/@maryamadps?_r=1&_t=ZS-99lm5nyJ3yv" target="_blank">
+        <a class="button"
+           href="https://www.tiktok.com/@maryamadps?_r=1&_t=ZS-99lm5nyJ3yv"
+           target="_blank">
             🎵 TikTok
         </a>
-        <a href="https://www.instagram.com/norfatmahdm?stkn=MW80emwydzhubzlpcA%3D%3D&utm_source=qr" target="_blank">
+        <a class="button"
+           href="https://www.instagram.com/norfatmahdm?stkn=MW80emwydzhubzlpcA%3D%3D&utm_source=qr"
+           target="_blank">
             📸 Instagram
         </a>
+        <div class="footer">
+            ✨ Tap • Connect • Share
+        </div>
     </div>
 </body>
 </html>
